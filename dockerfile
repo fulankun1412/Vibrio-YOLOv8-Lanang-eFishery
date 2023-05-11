@@ -16,4 +16,4 @@ RUN pip install torch  --extra-index-url https://download.pytorch.org/whl/cpu
 EXPOSE 8501
 
 # configure the container to run in an executed manner
-CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]

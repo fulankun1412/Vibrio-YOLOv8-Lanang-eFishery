@@ -12,13 +12,12 @@ from clearml import Task, InputModel
 with open('config.yaml','r') as f:
     configModel = yaml.safe_load(f)
 
-task = Task.init(project_name='OCR Model-eFishery', task_name='OCR Detection and Text Extraction', task_type="inference")
-inputModel = InputModel(project="OCR Model-eFishery", name=configModel["model-config"]["YOLO-model"])
+task = Task.init(project_name='Take Home Test Model-eFishery', task_name='Vibrio Detection and Counting', task_type="inference", reuse_last_task_id=True)
+inputModel = InputModel(project="Take Home Test Model-eFishery", name=configModel["model-config"]["YOLO-model"])
 task.connect(inputModel)
 pathToModel = inputModel.get_local_copy()
 
 model = YOLO(pathToModel)
-imgDelimiter = cv2.imread(configModel["model-config"]["delimiter"])
 gcv_api_key_path = configModel["model-config"]["vision-key"]
 imgSize = configModel["model-config"]["image-size"]
 
