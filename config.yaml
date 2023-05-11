@@ -1,0 +1,11 @@
+clearml-serving-config:
+  uid : 056ce7ec55f54f26934a5ce85bf44c70
+model-config:
+  YOLO-model: Vibrio-eFishery
+  delimiter: delimiter/delimiter6.png
+  vision-key: development-356407-6002a5991254.json
+  image-size: 640
+  device-mode: cpu
+  save-mode: False
+  conf: 0.25
+  iou: 0.25
