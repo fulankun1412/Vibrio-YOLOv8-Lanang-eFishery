@@ -32,7 +32,7 @@ if fileUpload:
     imageDetectedHolder = st.empty() 
     imageDetectedHolder.image(imageResults)
 
-    st.subheader("Text Result")
-    st.text(f"Black : {vibrioResult['black']}")
-    st.text(f"Yellow : {vibrioResult['yellow']}")
-    st.text(f"Green : {vibrioResult['green']}")
+    st.subheader("Vibrio Result")
+    st.text(f"Black : {vibrioResult['black']*10}")
+    st.text(f"Yellow : {vibrioResult['yellow']*10}")
+    st.text(f"Green : {vibrioResult['green']*10}")

@@ -50,6 +50,6 @@ def extractValue(img):
     
     for label in classes.values():
         if label not in finalDict.keys():
-            finalDict[label] = "0"
+            finalDict[label] = 0
     
     return results[0].plot(), finalDict
