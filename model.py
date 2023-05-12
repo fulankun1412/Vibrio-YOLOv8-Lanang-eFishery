@@ -1,7 +1,6 @@
 from ultralytics import YOLO
 import cv2
 from collections import OrderedDict
-import numpy as np
 import yaml
 import os
 
@@ -12,8 +11,12 @@ from clearml import Task, InputModel
 with open('config.yaml','r') as f:
     configModel = yaml.safe_load(f)
 
-task = Task.init(project_name='Take Home Test Model-eFishery', task_name='Vibrio Detection and Counting', task_type="inference", reuse_last_task_id=True)
-inputModel = InputModel(project="Take Home Test Model-eFishery", name=configModel["model-config"]["YOLO-model"])
+task = Task.init(project_name=configModel["clearml-project-config"]["project-name"], task_name=configModel["clearml-project-config"]["task-name"],
+                 task_type=configModel["clearml-project-config"]["task-type"], reuse_last_task_id=configModel["clearml-project-config"]["id"])
+
+inputModel = InputModel(project=configModel["clearml-project-config"]["project-name"], name=configModel["model-config"]["YOLO-model"],
+                        only_published=configModel["model-config"]["published"], tags=configModel["model-config"]["tags"])
+
 task.connect(inputModel)
 pathToModel = inputModel.get_local_copy()
 
