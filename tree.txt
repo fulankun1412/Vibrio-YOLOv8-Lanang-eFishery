@@ -1,0 +1,66 @@
+Folder PATH listing for volume System
+Volume serial number is 9A80-01BA
+C:.
+¦   .gitignore
+¦   app.py
+¦   clearml.conf
+¦   command.txt
+¦   config.yaml
+¦   docker-compose.yaml
+¦   dockerfile
+¦   LICENSE
+¦   model.py
+¦   predict_notebook.ipynb
+¦   README.md
+¦   requirements.txt
+¦   train.py
+¦   training_notebook.ipynb
+¦   tree.txt
+¦   
++---vibrio
+¦   +---vibrio_mae
+¦           1-6-vibrio.jpg
+¦           1-6-vibrio.txt
+¦           10-11-vibrio.jpg
+¦           10-11-vibrio.txt
+¦           11-113-vibrio.jpg
+¦           11-113-vibrio.txt
+¦           12-51-vibrio.jpg
+¦           12-51-vibrio.txt
+¦           13-53-vibrio.jpg
+¦           13-53-vibrio.txt
+¦           14-63-vibrio.jpg
+¦           14-63-vibrio.txt
+¦           15-25-vibrio.jpg
+¦           15-25-vibrio.txt
+¦           16-53-vibrio.jpg
+¦           16-53-vibrio.txt
+¦           17-45-vibrio.jpg
+¦           17-45-vibrio.txt
+¦           18-18-vibrio.jpg
+¦           18-18-vibrio.txt
+¦           19-1-vibrio.jpg
+¦           19-1-vibrio.txt
+¦           2-19-vibrio.jpg
+¦           2-19-vibrio.txt
+¦           20-12-vibrio.jpg
+¦           20-12-vibrio.txt
+¦           3-52-vibrio.jpg
+¦           3-52-vibrio.txt
+¦           4-57-vibrio.jpg
+¦           4-57-vibrio.txt
+¦           5-26-vibrio.jpg
+¦           5-26-vibrio.txt
+¦           6-16-vibrio.jpg
+¦           6-16-vibrio.txt
+¦           7-4-vibrio.jpg
+¦           7-4-vibrio.txt
+¦           8-74-vibrio.jpg
+¦           8-74-vibrio.txt
+¦           9-1-vibrio.jpg
+¦           9-1-vibrio.txt
+¦           classes.txt
+¦           
++---__pycache__
+        model.cpython-39.pyc
+        
