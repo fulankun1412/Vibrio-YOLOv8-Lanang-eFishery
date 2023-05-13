@@ -42,4 +42,4 @@ docker-compose up
 ![image](https://github.com/fulankun1412/Vibrio-YOLOv8-Lanang-eFishery/assets/16248869/08175c0a-2a99-46d4-8176-a72b9e5da08e)
 
 ## Referensi 
-Dokumentasi YOLOv8: [https://docs.yolov8.ai/](https://docs.ultralytics.com/modes/)
+Dokumentasi YOLOv8: [Ultralytics YOLOv8](https://docs.ultralytics.com/modes/)
