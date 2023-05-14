@@ -27,12 +27,12 @@ if fileUpload:
     imageUploadedHolder.image(path)
 
     imageResults, vibrioResult = extractValue(path)
+    with st.spinner('Wait for it... Detecting the vibrio and counting per class'):
+        st.subheader("Result Image")
+        imageDetectedHolder = st.empty() 
+        imageDetectedHolder.image(imageResults)
 
-    st.subheader("Result Image")
-    imageDetectedHolder = st.empty() 
-    imageDetectedHolder.image(imageResults)
-
-    st.subheader("Vibrio Result")
-    st.text(f"Black : {vibrioResult['black']*10}")
-    st.text(f"Yellow : {vibrioResult['yellow']*10}")
-    st.text(f"Green : {vibrioResult['green']*10}")
+        st.subheader("Vibrio Result")
+        st.text(f"Black : {vibrioResult['black']*10}")
+        st.text(f"Yellow : {vibrioResult['yellow']*10}")
+        st.text(f"Green : {vibrioResult['green']*10}")
