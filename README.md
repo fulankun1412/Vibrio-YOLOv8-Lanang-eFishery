@@ -4,6 +4,11 @@ Selamat datang di proyek "Deteksi dan Penghitungan Bakteri Vibrio dari Cawan Pet
 ## Deskripsi Proyek
 Proyek ini bertujuan untuk mengembangkan sebuah sistem yang dapat mendeteksi dan menghitung jumlah bakteri Vibrio dalam gambar cawan Petri Dish menggunakan teknologi YOLOv8. Cawan Petri Dish adalah alat yang sering digunakan dalam penelitian mikrobiologi untuk mengkultur bakteri. Dengan memanfaatkan kemampuan deteksi objek dan komputasi visual dari YOLOv8, proyek ini akan memberikan solusi otomatis yang dapat membantu mempercepat proses identifikasi dan penghitungan bakteri Vibrio.
 
+## Solusi
+Berdasarkan permasalahan yang disebutkan yaitu untuk membantu "Menghitung jumlah spesies vibrio dengan warna yang berbeda dan mengukur size dari tiap species yang terdapat pada gambar tersebut. Untuk mensolve problem tersebut diperlukan platform untuk mempermudah beliau melakukan ekstraksi ukuran dan warna dari tiap koloni vibrio". 
+
+Maka dari itu solusi yang digunakan untuk memperhitungkan jumlah koloni vibrio dari warnanya menggunakan model YOLOv8 pertama untuk mendeteksi keseluruhan dari vibrio yang ada di cawan petri, kemudian dihitungkan jumlah berdasarkan banyaknya deteksi per kelasnya. Dalam perhitungan jumlah koloni setiap vibrio, dengan menggunakan informasi yang ada yaitu dalam gambar. Bila ada 1000 koloni suatu vibrio dan banyak lingkaran koloni ada 100, maka bisa disimpulkan menggunakan rumus `XY = Z -> Y = Z/X`. Bahwa setiap satu lingkaran Vibrio ada 10 koloni berapa mau besarnya dari satu koloni tersebut. Maka dibuat solusi menggunakan YOLOv8 sebagai deteksi nya dan dihitungkan menggunakan rumus XY = Z.
+
 ## Instalasi dan Penggunaan
 Berikut adalah langkah-langkah untuk menginstal dan menjalankan proyek ini di local environtment, sangat disarankan untuk menggunakan virtual environment atau sudah terpasang docker:
 ### Python Lokal
